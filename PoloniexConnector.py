@@ -39,7 +39,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__get_public_command({
             "command": "returnTicker"
@@ -51,7 +50,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__get_public_command({
             "command": "return24hVolume"
@@ -65,7 +63,6 @@ class PoloniexConnector:
 
         :version 1.0.2
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__get_public_command({
                 "command":"returnOrderBook",
@@ -82,7 +79,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
 
         payload = {
@@ -108,7 +104,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__get_public_command({
             "command": "returnChartData",
@@ -124,7 +119,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :revision 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__get_public_command({
             "command": "returnCurrencies"
@@ -136,7 +130,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :revision 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         currencies = self.return_currencies().json()
 
@@ -150,7 +143,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :revision 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__currencies
 
@@ -161,7 +153,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__get_public_command({
             "command": "returnLoanOrders",
@@ -174,7 +165,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnBalances",
@@ -187,7 +177,6 @@ class PoloniexConnector:
 
         :version 1.0.1
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnCompleteBalances",
@@ -200,7 +189,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnDepositAddresses",
@@ -213,7 +201,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnOpenOrders",
@@ -227,7 +214,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnTradeHistory",
@@ -242,7 +228,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnOrderTrades",
@@ -257,7 +242,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnOrderStatus",
@@ -277,7 +261,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         post_data = {
             "command": "buy",
@@ -307,7 +290,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "sell",
@@ -324,7 +306,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "cancelOrder",
@@ -340,7 +321,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "moveOrder",
@@ -355,7 +335,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnFeeInfo",
@@ -368,7 +347,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnAvailableAccountBalances",
@@ -381,7 +359,6 @@ class PoloniexConnector:
 
         :version 1.0.0
         :rev 11.01.2021
-        :author https://github.com/TiredFingers/
         """
         return self.__post_private_command({
             "command": "returnTradableBalances",
